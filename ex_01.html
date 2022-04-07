@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+        	.box_red {
+        		background-color: #ff0000;
+        		width: 500px;
+        		height: 60px;
+        	}
+        	
+        	.box_blue{
+        		background-color: #0000ff;
+        		width: 700px;
+        		height: 80px;
+        	}
+        	/* width, height는 블록 태그에서만 적용 가능 */
+        	.span_red {
+        		background-color: #ff0000;
+        		width: 500px;
+        		height: 60px;	/* width, height 적용 안됨 */
+        	}
+        	
+        	.span_blue {
+        		background-color: #0000ff;
+        	}
+        	
+        	.in-b {
+        		display: inline-block; /* 인라인-블록으로 변경 */
+        		background-color: #00ff00;
+        		width: 300px;
+        	}
+        </style>
+    </head>
+
+    <body>
+		<div class="box_red">
+			css에서 div태그 가로 세로가 어떻게 적용되는지 확인해 보겠습니다. d(^o^)
+		</div>
+
+		<div class="box_blue">
+			css에서 div태그 가로 세로가 어떻게 적용되는지 확인해 보겠습니다. d(ㅇㅅㅇ)
+		</div>
+		
+		<p class="box_blue">
+			css에서 p태그 가로 세로가 어떻게 적용되는지 확인해 보겠습니다. (^p^)/
+		</p>
+		
+		<span class="span_red">강아지🐶</span>
+		<span class="span_blue">고양이🐱</span>
+		<a class="box_red" href="http://www.naver.com">네이버</a>
+		<br>
+		
+		<h2>인라인-블록</h2>
+		<!-- 인라인-블록 : 줄바꿈은 없지만 크기 적용 가능 -->
+		<img class="box_blue" src="./img/jung.jpg">
+		<input class="box_red" type="text">
+		<button class="box_red" type="button">저장</button>
+		<br>
+		<span class="in-b ">강아지🐶</span>
+		<span class="in-b">고양이🐱</span>
+		<a class="in-b" href="http://www.naver.com">네이버</a>
+		<br>
+    </body>
+
+</html>
